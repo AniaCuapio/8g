@@ -3,7 +3,9 @@ import logo from "./logo.svg";
 import "./App.css";
 
 //Components
-import Greet from "./components/Greet";
+import FunctionGreet from "./components/FunctionGreet";
+import ClassGreet from "./components/ClassGreet";
+import Layout from "./components/Layout";
 
 function App() {
   return (
@@ -21,8 +23,16 @@ function App() {
         >
           Learn React
         </a>
-        <Greet firstName="Ania" lastName="Cuapio" />
+        <FunctionGreet firstName="Ania" lastName="Cuapio" />
+        <ClassGreet firstName="Ania2" lastName="Carpio" />
       </header>
+      {/* Crear un componente funcional que renderice una Card
+haciendo referencia al post de un blog
+Busquen referencias de blogs y la estructura de sus posts
+Tips:
+- Primero abstraigan el objeto post (esto es el componente y sus props)
+- Utilicen reactstrap para pimpearlo */}
+      <Layout />
     </div>
   );
 }
